@@ -1,15 +1,30 @@
-::after, ::before{
+*{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-h1, h2 {
+:root {
+    --winning-combo: coral;
+}
+h1 {
     color: darkseagreen;
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+h2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: darkslategrey;
     text-align: center;
+}
+
+h3 {
+    color: coral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .box {
@@ -19,6 +34,8 @@ body {
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(3, auto);
+    cursor: pointer;
+    color: darksalmon;
 }
 
 #t1, #t2, #t3 {
@@ -50,4 +67,17 @@ body {
     background-color: darksalmon;
     border-color: antiquewhite;
     color: antiquewhite;
+}
+
+.playerX {
+    color: mediumvioletred;
+}
+
+.playerO {
+    color: mediumseagreen;
+}
+
+.display-outcome {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
