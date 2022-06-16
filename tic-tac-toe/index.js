@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tiles = Array.from(document.getElementsByClassName('box'))
     const playerDisplay = document.getElementsByClassName('display-playerX-or-playerO')
     const gameAnnouncer = document.getElementsByClassName('turn-display')
-    
+
     // assign players
     const playerX = 'X'
     const playerO = 'O'
@@ -89,5 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("player X").textContent = pScore;
             document.getElementById("player O").textContent = cScore;
         }
-
+    }
 })
